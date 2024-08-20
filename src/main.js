@@ -12,7 +12,10 @@ const config = {
   parent: 'container',
   backgroundColor: '#f9ca24',
   pixelArt: true,
-  scene: [Bootloader, Play, Gameover, UI, Menu],
+  physics: {
+    default: 'arcade'
+  },
+  scene: [Bootloader, Play, Gameover, UI, Menu]
 };
 
 new Phaser.Game(config);
